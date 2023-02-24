@@ -25,6 +25,11 @@ int main()
 	//we can also re-assign the value in vectors by using index number .
 	primes[1] = 23;
 	cout << primes[1] << endl;
+
+	for (int i = 0; i < primes.size(); i++)//print the vectors like a regular array
+	{
+		cout << primes[i] << " ";
+	}
 	return 0;
 }
 
