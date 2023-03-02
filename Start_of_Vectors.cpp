@@ -6,7 +6,6 @@
 
 #include <iostream>
 #include<vector>
-#include<string>
 using namespace std;
 
 
@@ -81,9 +80,48 @@ int main()
 		cout << arr[i]<<" ";
 	}
 
+	cout << endl;
+//-----------***********---------------------------
 
+	//------------Sorting using the BUBBLE SORT----------
 
+	vector<int> arry;
+	int m;
+	int i,j;
+	cout << "Enter the size of array for Bubble Sort:---" << " " << endl;
+	cin >> m;
+	int ar;
 
+	cout << "Enter the elements" << endl;
+	for (i = 0; i < m;i++)
+	{
+		cin >> ar;
+		arry.push_back(ar);
+	}
+	cout << "The array is :-  " << " ";
+	for (i = 0; i < arry.size(); i++) //printing the array till the number of elements.
+	{
+		cout << arry[i] << " ";
+	}
+
+	for (i = 0; i < arry.size(); i++)
+	{
+		for (j = 0; j < arry.size()-1; j++)
+		{
+			if (arry[j] > arry[j+1])
+			{
+				swap(arry[j], arry[j+1]);
+			}
+		}
+	}
+
+	cout << endl;
+	cout << "Array of Bubble Sort is as follows:---";
+
+	for (int l = 0; l < arry.size(); l++)
+	{
+		cout << arry[l]<<" ";
+	}
 
 	return 0;
 }
