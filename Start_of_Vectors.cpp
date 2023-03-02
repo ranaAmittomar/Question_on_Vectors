@@ -30,6 +30,29 @@ int main()
 	{
 		cout << primes[i] << " ";
 	}
+	cout << endl;
+
+	//getting user input for vector arrays.....
+
+
+	vector<int> arr;
+	int n;
+	cout << "Enter the size of array" << " " << endl;
+	cin >> n;
+	int a;
+	cout << "Enter the elements" << endl;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a;
+		arr.push_back(a);
+	}
+
+	cout << "The array is :-  " << " ";
+	for (int i = 0; i < arr.size(); i++)
+	{
+		cout << arr[i] << " ";
+	}
+
 	return 0;
 }
 
